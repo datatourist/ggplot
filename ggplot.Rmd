@@ -24,7 +24,7 @@ Although ggplot2 can be fully customized, it reaches a point of diminishing retu
 
 ggplot is an R package for data exploration and producing plots. It produces fantastic-looking graphics and allows one to slice and dice one’s data in many different ways.
 
-Advantages of ggplot2
+###Advantages of ggplot2
 
 consistent underlying grammar of graphics (Wilkinson, 2005)
 plot specification at a high level of abstraction
