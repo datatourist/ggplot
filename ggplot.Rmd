@@ -1,0 +1,65 @@
+---
+title: "Introduction to ggplot2"
+author: "Kirill Voronov"
+date: '10 апреля 2017 г '
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Основы
+
+http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html
+https://github.com/echen/ggplot2-tutorial/blob/master/ggplot2-tutorial.R
+http://seananderson.ca/ggplot2-FISH554/
+http://www.noamross.net/blog/2012/10/5/ggplot-introduction.html
+
+My goal: by the end of the workshop you will be able to reproduce this graphic from the Economist:
+
+ggplot2 is an R package by Hadley Wickham and Winston Chang that implements Wilkinson's Grammar of Graphics. The emphasis of ggplot2 is on rapid exploration of data, and especially high-dimensional data. Think of base graphic functions as drawing with data (examples of base graphic functions are plot(), points(), and lines(). With base graphics, you have complete control over every pixel in a plot but it can take a lot of time and code to produce a plot.
+
+Although ggplot2 can be fully customized, it reaches a point of diminishing returns. I tend to use ggplot2 and base graphics for what they excel at: ggplot2 for rapid data exploration and base graphics for polished and fully-customized plots for publication.
+
+ggplot is an R package for data exploration and producing plots. It produces fantastic-looking graphics and allows one to slice and dice one’s data in many different ways.
+
+Advantages of ggplot2
+
+consistent underlying grammar of graphics (Wilkinson, 2005)
+plot specification at a high level of abstraction
+very flexible
+theme system for polishing plot appearance
+mature and complete graphics system
+many users, active mailing list
+That said, there are some things you cannot (or should not) do With ggplot2:
+
+3-dimensional graphics (see the rgl package)
+Graph-theory type graphs (nodes/edges layout; see the igraph package)
+Interactive graphics (see the ggvis package)
+What Is The Grammar Of Graphics?
+
+The basic idea: independently specify plot building blocks and combine them to create just about any kind of graphical display you want. Building blocks of a graph include:
+
+data
+aesthetic mapping
+geometric object
+statistical transformations
+scales
+coordinate system
+position adjustments
+faceting
+
+Compared to base graphics, ggplot2
+
+is more verbose for simple / canned graphics
+is less verbose for complex / custom graphics
+does not have methods (data should always be in a data.frame)
+uses a different system for adding plot elements
+
+
+
+```{r cars}
+summary(cars)
+```
+
