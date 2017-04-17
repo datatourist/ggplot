@@ -60,10 +60,12 @@ uses a different system for adding plot elements
 
 
 ```{r cars}
+system("git commit -a")
 system("git status")
 system("git add ggplot.Rmd")
+system("git status")
+system("git commit -m adding2")
 system("git push origin master")
-system("git commit -m adding")
 ```
 What Is The Grammar Of Graphics?
 
