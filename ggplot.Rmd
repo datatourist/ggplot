@@ -62,7 +62,6 @@ uses a different system for adding plot elements
 ```{r cars}
 summary(cars)
 ```
-
 What Is The Grammar Of Graphics?
 
 The basic idea: independently specify plot building blocks and combine them to create just about any kind of graphical display you want. Building blocks of a graph include:
